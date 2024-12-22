@@ -1,0 +1,41 @@
+{
+  "name": "slash-fashion-assistant-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "seed": "node ./prisma/seed.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@azure/storage-blob": "^12.26.0",
+    "@prisma/client": "^6.0.1",
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "faker": "^5.5.3",
+    "form-data": "^4.0.1",
+    "ioredis": "^5.4.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.13.1",
+    "pool": "^0.4.1",
+    "socket.io": "^4.8.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.0.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "prisma": "^6.0.1"
+  }
+}
