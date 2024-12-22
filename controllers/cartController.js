@@ -238,8 +238,8 @@ export const checkoutCart = async (req, res)=> {
                 order_status: "PENDING",
                 user_id: userId,
                 total_cost: cart.items.reduce((total, item) => {
-                    return total + item.product.product.price * item.quantity * (1 - parseFloat(item.product.product.discount / 100));
-                }),
+                    return total + item.product.product.price * item.quantity * parseFloat(1 - item.product.product.discount / 100);
+                }, 0),
                 items: {
                     create: cart.items.map((item) => {
                         return {
