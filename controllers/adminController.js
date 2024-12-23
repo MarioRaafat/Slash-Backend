@@ -592,6 +592,8 @@ export const deleteAdmin = async (req, res) => {
         const admin = await prisma.admin.findUnique({where: {id: userId}});
         if (admin.role !== "SuperAdmin") {
             return res.status(403).send("Insufficient permissions");
+        } else if (admin.id === id) {
+            return res.status(400).json({ message: "You can't delete yourself" });
         }
 
         const deletedAdmin = await prisma.admin.delete({where: {id}});
