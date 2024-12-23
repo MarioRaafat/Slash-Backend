@@ -59,8 +59,60 @@ const fashionBrands = [
         name: "Forever 21",
         email: "forever21@forever21.com",
         description: "A fast-fashion retailer offering trendy and affordable clothing, especially for younger generations."
+    },
+    {
+        name: "TownTeam",
+        email: "townteam@townteam.com",
+        description: "A popular brand offering stylish and affordable clothing for men."
+    },
+    {
+        name: "DeFacto",
+        email: "defacto@defacto.com",
+        description: "A global fashion brand offering casual and trendy apparel."
+    },
+    {
+        name: "Tie House",
+        email: "tiehouse@tiehouse.com",
+        description: "A brand specializing in elegant ties and formal wear accessories."
+    },
+    {
+        name: "Lacoste",
+        email: "lacoste@lacoste.com",
+        description: "A French brand known for its premium casualwear, especially polo shirts."
+    },
+    {
+        name: "Puma",
+        email: "puma@puma.com",
+        description: "A global sportswear brand that also offers fashionable athletic clothing."
+    },
+    {
+        name: "Calvin Klein",
+        email: "calvinklein@calvinklein.com",
+        description: "A luxury fashion brand renowned for its minimalistic designs and iconic underwear."
+    },
+    {
+        name: "Dior",
+        email: "dior@dior.com",
+        description: "A French luxury brand offering high-end fashion, accessories, and fragrances."
+    },
+    {
+        name: "American Eagle",
+        email: "americaneagle@americaneagle.com",
+        description: "A popular American brand offering casual and trendy clothing for youth."
+    },
+    {
+        name: "Polo",
+        email: "polo@polo.com",
+        description: "A classic American brand known for its preppy and elegant styles."
+    },
+    {
+        name: "Prada",
+        email: "prada@prada.com",
+        description: "A luxury Italian fashion house, offering high-end clothing, accessories, and handbags."
     }
 ];
+
+
 
 
 export const BrandsSeed = async () => {
